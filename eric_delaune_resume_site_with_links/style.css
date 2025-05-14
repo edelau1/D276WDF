@@ -1,0 +1,76 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: whitesmoke;
+  color: gray;
+  margin: 10px;
+}
+.container {
+  max-width: 1024px;
+  margin: auto;
+  padding: 25px;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px gray;
+}
+header {
+  text-align: center;
+  margin-bottom: 2px;
+}
+header h1 {
+  font-size: 20pt;
+  color: darkslategray;
+}
+.contact-info {
+  font-size: 12pt;
+  color: gray;
+}
+h2 {
+  border-bottom: 2px solid gray;
+  padding-bottom: 1px;
+  margin-top: 2px;
+  color: darkslategray;
+}
+h3 {
+  margin-bottom: 0;
+  color: darkslategray;
+}
+.company {
+  font-style: italic;
+  font-size: 12pt;
+  color: darkslategray;
+  margin-bottom: 1px;
+}
+ul {
+  list-style-type: square;
+  padding-left: 2px;
+}
+.job {
+  margin-bottom: 2px;
+}
+
+#gridcontainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#gridcontainer > nav{
+  text-align: center;
+  color: black;
+  background-color: lightgray;
+  border: solid 1px darkslategray;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#date-widget{
+  display: flex;
+  color: black;
+  background-color: lightgray;
+  border: solid 1px darkslategray;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 465px;
+  margin-left:450px;
+  border-radius: 5px;
+  box-shadow: 2px 2px gray;
+}

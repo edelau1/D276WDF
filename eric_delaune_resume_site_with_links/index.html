@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eric Delaune - Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>ERIC DELAUNE</h1>
+      <p class="contact-info">
+        1 (337) 256-1705 - ERIC.R.DELAUNE@GMAIL.COM - 36707 Skyvista Ln. Creston, WA 99117
+      </p>
+    </header>
+
+    <div id="date-widget"></div>
+
+    <script>
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      const today = new Date();
+      const formattedDate = today.toLocaleDateString(undefined, options); 
+      document.getElementById('date-widget').textContent = formattedDate;
+    </script>
+
+    <section>
+        <h2>Links</h2>
+          <span id="gridcontainer"><nav><a href="cover-letter.html">Cover Letter</a></nav>
+          <nav><a href="career-goals.html">Career Goals</a></nav>
+          <nav><a href="https://www.stratoteksystems.com" target="blank">Stratotek Website</a></nav></span>
+    </section>
+
+    <section>
+      <h2>Summary</h2>
+      <p>
+        A military veteran and well-rounded, hard-working renaissance man with years of experience in project management, aerospace maintenance, information technology, force protection, and firefighting.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills & Abilities</h2>
+      <ul>
+        <li>Maintenance Production Management - 3 Years</li>
+        <li>IT (Including Python/C/C++ Development) - 5 Years</li>
+        <li>Aerospace Maintenance - 10+ Years</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="job">
+        <h3>Chief Maintenance Manager</h3>
+        <p class="company">Silgan Unicep (2025 - Present)</p>
+        <p>
+          Oversees the maintenance departments of both production facilities for a biomedical polymer manufacturing company. Manages personnel, preventative maintenance, and quality control for facilities, production lines, robotic assembly units, and process logic controllers.
+        </p>
+      </div>
+
+      <div class="job">
+        <h3>Maintenance Manager and Data Analyst</h3>
+        <p class="company">Washington Air National Guard / 141st MOF Plans & Scheduling (2022 - Present)</p>
+        <p>
+          Plans, coordinates, and oversees proper documentation of all maintenance, upgrades, and modifications on WAANG aircraft. Assigns aircraft to missions based on maintenance availability and analyzes historical data to support engineering decisions.
+        </p>
+      </div>
+
+      <div class="job">
+        <h3>Owner, Chief Software Engineer</h3>
+        <p class="company">Stratotek Systems, LLC. (2018 - Present)</p>
+        <p>
+          Develops and implements software to improve workflow, safety, and efficiency in DoD aircraft maintenance. Projects are currently in beta testing with 141st and 92nd Air Refueling Wings.
+        </p>
+      </div>
+
+      <div class="job">
+        <h3>KC-135 Crew Chief (Aircraft Mechanic/Inspector)</h3>
+        <p class="company">USAF / WA Air National Guard, 141st MXS (2011 - 2022)</p>
+        <p>
+          Performed inspections, repairs, fueling, documentation, and supervision for KC-135 aircraft. Trained personnel and facilitated critical maintenance and towing operations.
+        </p>
+      </div>
+
+      <div class="job">
+        <h3>IT Helpdesk Technician</h3>
+        <p class="company">Teche Federal Bank (2007 - 2011)</p>
+        <p>
+          Provided helpdesk support and automated an OS rollout across all branches. Performed troubleshooting and preventative maintenance across IT systems.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Pending:</strong> B.S. in Software Engineering - Western Governor's University (Projected 2027)</li>
+        <li><strong>2025:</strong> A.A.S. in Maintenance Production Management - Community College of the Air Force</li>
+        <li><strong>2021:</strong> A.A.S. in Aerospace Maintenance - Community College of the Air Force</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Communication</h2>
+      <p>
+        Strong written and verbal communication skills. Able to provide constructive feedback and collaborate effectively in team environments.
+      </p>
+    </section>
+
+    <section>
+      <h2>Leadership</h2>
+      <p>
+        Experienced in managing multiple projects with tight deadlines while maintaining quality. Proven leadership during combat and non-combat deployments.
+      </p>
+    </section>
+
+    <section>
+      <h2>Stratotek Demos</h2>
+      <ul>
+        <video controls width="1024">
+          <source src="StatusBoard_Demo2.mp4">
+        </video>
+        <br />
+        <br />
+        <video controls width="1024">
+          <source src="C-130_SB_Demo.mp4">
+        </video>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

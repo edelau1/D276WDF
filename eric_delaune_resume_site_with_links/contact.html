@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Contact</h1>
+    </header>
+    <section>
+      <form id="contactForm" action="https://wp.zybooks.com/form-viewer.php" method="POST" onsubmit="handleSubmit(event)">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="company">Company Name:</label><br>
+        <input type="text" id="company" name="company"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+
+        <label>Best Contact Time:</label><br>
+        <input type="radio" id="am" name="contactTime" value="AM">
+        <label for="am">A.M.</label><br>
+        <input type="radio" id="pm" name="contactTime" value="PM">
+        <label for="pm">P.M.</label><br>
+        <input type="radio" id="anytime" name="contactTime" value="Anytime" checked>
+        <label for="anytime">Anytime</label><br><br>
+
+        <label for="contactMethod">Preferred Contact Method:</label><br>
+        <select id="contactMethod" name="contactMethod">
+          <option value="phone">Phone</option>
+          <option value="email">Email</option>
+          <option value="text">Text</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </div>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      const form = document.getElementById('contactForm');
+      const formData = {
+        firstName: form.firstName.value,
+        lastName: form.lastName.value,
+        company: form.company.value,
+        email: form.email.value,
+        phone: form.phone.value,
+        message: form.message.value,
+        contactTime: form.contactTime.value,
+        contactMethod: form.contactMethod.value
+      };
+      console.log("Form Submission:", formData);
+      form.submit();
+    }
+  </script>
+</body>
+</html>
