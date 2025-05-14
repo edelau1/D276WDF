@@ -95,6 +95,12 @@ form {
   text-align: center;
 }
 
+footer {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10pt;
+  font-color: lightgray;
+}
+
 input[type=submit] {
    width: 200px;
    background-color: darkslategray;
