@@ -101,6 +101,44 @@ footer {
   font-color: lightgray;
 }
 
+/*radio buttons modified using code from https://learn.zybooks.com/zybook/WGUD276v3/chapter/5/section/5 and modifying color*/
+
+input[type=radio] + label {
+   cursor: pointer;
+   font-size: 1.3em;
+}
+
+input[type=radio] { 
+   appearance: none;
+   margin: 0;
+}
+
+input[type=radio] + label::before {
+   content: "\00a0";
+   border-radius: 10px;
+   display: inline-block; 
+   width: 16px;
+   height: 16px;  
+   text-align: center;
+   line-height: 1em;
+   font-size: 0.8em; 
+   margin-right: 10px;
+   border: 0.125em solid white;
+   background-color: gray;
+}
+
+input[type=radio]:checked + label::before {
+   content: "\2022";
+   color: #fff;
+   background: darkblue;
+}
+
+input[type=radio]:focus + label::before {
+   box-shadow: 0 0 0 1px gray;
+}
+
+/*radio buttons modified using code from https://learn.zybooks.com/zybook/WGUD276v3/chapter/5/section/5 and modifying color*/
+
 input[type=submit] {
    width: 200px;
    background-color: darkslategray;
