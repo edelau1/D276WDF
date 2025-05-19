@@ -9,6 +9,16 @@ strong {
   color: darkslategray;
 }
 
+mark {
+  background-color: blue;
+  color: red;
+}
+
+table, th, td { 
+   border: 2px solid gray; 
+   color: darkslategray;
+} 
+
 .container {
   max-width: 1024px;
   margin: auto;
@@ -62,10 +72,10 @@ ul {
 
 #gridcontainer{
   display: grid;
-  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-columns: 335px 335px 335px;
   grid-template-areas: 
-    "nav nav nav nav"
-    ". img img .";
+    "nav nav nav"
+    "img img img";
 }
 
 #gridcontainer > nav{
