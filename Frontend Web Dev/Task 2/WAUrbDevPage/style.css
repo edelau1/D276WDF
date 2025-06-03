@@ -17,10 +17,20 @@ body {
 
 header {
   background-color: #004080;
-  color: white;
+  background-image: url('./Citypix/docknightse.jpg');
+  background-size: 100%;
   padding: 1.5rem;
   text-align: center;
+}
+
+header a{
+  color: white;
+  text-shadow: 3px 3px 3px rgba(0,0,0,1);
+  text-align: center;
   font-size: 1.75rem;
+  text-decoration: none;
+  font-size: 4rem;
+  background-color: rgba(0,0,0,0.25);
 }
 
 .nav-tabs {
@@ -36,13 +46,17 @@ header {
   color: #004080;
   border-right: 1px solid lightgray;
 }
-
+/*might do something with this later idk*/
 .nav-tabs a:last-child {
   border-right: none;
 }
 
 .nav-tabs a.active {
   background-color: #a1a1f8;
+  font-weight: bold;
+}
+
+.nav-tabs a:hover {
   font-weight: bold;
 }
 
@@ -58,7 +72,7 @@ header {
   gap: 1.5rem;
 }
 
-.state-info {
+.gen-info {
   background-color: white;
   padding: 0;
   border: 1px solid #ccc;
@@ -119,12 +133,19 @@ header {
 }
 
 .aside-card button {
-  margin-bottom: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: rgba(0,0,0,0.7);
+  margin-bottom: 0.25rem;
+  padding: 1rem 4rem;
+  background-color: rgba(0,0,0,0.5);
   color: white;
+  font-size: 1.175rem;
   border: none;
   cursor: pointer;
+}
+
+.aside-card button:hover {
+  padding: 2rem 8rem;
+  font-size: 1.25rem;
+  background-color: rgba(0,0,0,0.75);
 }
 
 .aside-logo {
@@ -154,4 +175,8 @@ footer {
   margin: 0 0.5rem;
   color: #c0e0ff;
   text-decoration: none;
+}
+
+.external-links a:hover {
+  color: purple;
 }
