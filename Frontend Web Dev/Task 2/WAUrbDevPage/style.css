@@ -95,11 +95,6 @@ header a{
   border: 1px solid #ccc;
 }
 
-.highlight img{
-  width: 60rem;
-  display: block;
-}
-
 .highlight strong{
   font-size: 1.5rem;
 }

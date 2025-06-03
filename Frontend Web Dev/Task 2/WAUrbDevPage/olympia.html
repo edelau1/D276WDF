@@ -30,7 +30,14 @@
         </ul>
       </div>
       <div class="highlight">
-        <img src="./Citypix/Olympia/capitol.jpg" alt="Washington Capitol Building" />
+        <picture>
+        <source media="(min-width: 1920px)"
+           srcset="./Citypix/Olympia/capitol.jpg" width="960rem">
+         <source media="(min-width: 1000px)"
+           srcset="./Citypix/Olympia/capitol.jpg" width="720rem">
+        <img src="./Citypix/Olympia/capitol-small.jpg"
+           alt="Washington Capitol Building">
+        </picture>
         <section><p><strong>Olympia is the capitol city of Washington State. Situated at the southern point of 
           Puget Sound in Western WA, it offers beautiful vistas of both the Cascade and Olympic mountain range 
           on either side of the sizeable body of saltwater. It is a rainy climate home to lush plant life. The 
