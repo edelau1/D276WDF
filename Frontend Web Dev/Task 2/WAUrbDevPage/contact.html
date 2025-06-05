@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Washington Office of Urban Development</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+        function validateForm() {
+            const email = document.getElementById("email").value;
+            const confirmEmail = document.getElementById("confirm-email").value;
+            if (email !== confirmEmail) {
+                alert("Email addresses do not match.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Washington Office of Urban Development</a></h1>
+  </header>
+  <nav class="nav-tabs">
+    <a href="index.html">Home</a>
+    <a href="olympia.html">Olympia</a>
+    <a href="seattle.html">Seattle</a>
+    <a href="spokane.html">Spokane</a>
+    <a href="contact.html" class="active">Contact Us</a>
+  </nav>
+
+  <main class="content">
+    <section class="main-section">
+        <div class="gen-info">
+            <h2><center>We Want to Hear Your Questions!</center></h2>
+            <p><center>If you have any questions, concerns, gripes, or complaints, send us your contact information with
+                a short message regarding the nature of your inquiry, and we will reach out to you.</center></p>
+                <apos><img src="questions.jpg" width="200rem" alt="Question Man"/></apos>
+        </div>
+      <div class="highlight">
+        <picture>
+        <source media="(min-width: 1920px)"
+           srcset="./Citypix/ranier-big.jpg" width="960rem">
+         <source media="(min-width: 1000px)"
+           srcset="./Citypix/ranier-medium.jpg" width="720rem">
+        <img src="./Citypix/ranier-small.jpg"
+           alt="Mt. Ranier State Park">
+        </picture>
+       <section>
+            <form onsubmit="return validateForm();">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required><br>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="name@domain.com" pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" required><br>
+
+                <label for="confirm-email">Confirm Email:</label>
+                <input type="email" id="confirm-email" name="confirm-email" placeholder="name@domain.com" pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" required><br>
+
+                <label for="question">Your Question:</label><br>
+                <textarea id="question" name="question" rows="5" cols="50" required></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        </div>
+      <div class="image-row">
+        <img src="./Citypix/Olympia/porto.jpg" alt="Port of Olympia" />
+        <img src="./Citypix/Seattle/udub.jpg" alt="University of Washington" />
+        <img src="./Citypix/Spokane/skyride.jpg" alt="Spokane Skyride" />
+        <img src="./Citypix/palouse.jpg" alt="Palouse Falls" />
+      </div>
+    </section>
+
+    <aside class="aside-section">
+      <div class="aside-card" style="background-image: url('./Citypix/Olympia/skylineo.jpg');">
+        <button onclick="window.open('olympia.html', '_blank')">Discover Olympia</button>
+      </div>
+      <div class="aside-card" style="background-image: url('./Citypix/Seattle/skylinesen.jpg');">
+        <button onclick="window.open('seattle.html', '_blank')">Discover Seattle</button>
+      </div>
+      <div class="aside-card" style="background-image: url('./Citypix/Spokane/skylinespo.png');">
+        <button onclick="window.open('spokane.html', '_blank')">Discover Spokane</button>
+      </div>
+      <div class="aside-logo">
+        <img src="logo.jpg" alt="Logo" />
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>WA HUD/OUD &copy; Eric Delaune 2025, Last modified: May 29, 2025</p>
+    <div class="external-links">
+      <a href="https://www.census.gov/" target="_blank">US Census Bureau</a><a href="https://www.census.gov/quickfacts/fact/table/olympiacitywashington" target="_blank">Olympia Census</a><a href="https://www.census.gov/quickfacts/fact/table/seattlecitywashington" target="_blank">Seattle Census</a><a href="https://www.census.gov/quickfacts/fact/table/spokanecitywashington" target="_blank">Spokane Census</a>
+      <a href="https://parks.wa.gov/" target="_blank">WA State Parks</a><a href="https://www.nps.gov/state/wa/index.htm" target="_blank">NPS-Washington State</a><a href="https://stateofwatourism.com/?utm_source=google&utm_medium=cpc&utm_campaign=madden%20dm-wawta&gad_source=1&gad_campaignid=22227908812&gbraid=0AAAAAoaJH0t6Ko2a3tgwSQYolOsSeqY7N&gclid=CjwKCAjw3f_BBhAPEiwAaA3K5Jp48Tk5w2qUMjSObP9ql8FJGIjKMUNWzWnKkLiiWtYbPFisMh8JkRoCK5EQAvD_BwE" target="_blank">WA Board of Tourism</a><a href="https://www.hud.gov/states/washington" target="_blank">HUD WA Homepage</a>
+    </div>
+  </footer>
+</body>
+</html>
