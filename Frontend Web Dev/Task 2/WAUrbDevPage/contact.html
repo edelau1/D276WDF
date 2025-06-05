@@ -5,17 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Washington Office of Urban Development</title>
   <link rel="stylesheet" href="style.css" />
+
   <script>
-        function validateForm() {
+        function validateForm(event) {
             const email = document.getElementById("email").value;
             const confirmEmail = document.getElementById("confirm-email").value;
             if (email !== confirmEmail) {
                 alert("Email addresses do not match.");
                 return false;
             }
+            handleSubmit(event);
             return true;
         }
     </script>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            var audio = new Audio("thankyou.mp3");
+            const form = document.getElementById('contactForm');
+            const formData = {
+            firstName: form.firstName.value,
+            lastName: form.lastName.value,
+            email: form.email.value,
+            confirm-email: form.confirm-email.value,
+            question: form.question.value,
+        };
+      audio.play();
+      console.log("Form Submission:", formData);
+      form.submit();
+    }
+    </script>
+
 </head>
 <body>
   <header>
@@ -47,7 +68,7 @@
            alt="Mt. Ranier State Park">
         </picture>
        <section>
-            <form onsubmit="return validateForm();">
+            <form id="contactForm" action="https://wp.zybooks.com/form-viewer.php" method="POST" onsubmit="return validateForm(event);">
                 <label for="first-name">First Name:</label>
                 <input type="text" id="first-name" name="first-name" required><br>
 
@@ -67,6 +88,7 @@
             </form>
         </section>
         </div>
+
       <div class="image-row">
         <img src="./Citypix/Olympia/porto.jpg" alt="Port of Olympia" />
         <img src="./Citypix/Seattle/udub.jpg" alt="University of Washington" />
